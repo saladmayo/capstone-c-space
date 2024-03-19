@@ -1,0 +1,107 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  height: 2.2rem;
+  color: #ff922b;
+  pointer-events: none;
+}
+
+.nav__toggle,
+.nav__close {
+  font-size: 1.5rem;
+  color: #ff922b;
+  cursor: pointer;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff922b;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  background-color: #ff922b;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.language-dropdown {
+  margin-left: 20px;
+}
+
+.separator {
+  border: none;
+  height: 2px;
+  background-color: #ff922b;
+  margin: 0;
+}
+
+/* Responsive */
+
+/* For screens smaller than 84em (1344px) */
+@media (max-width: 84em) {
+  .header {
+    padding: 3.2rem;
+  }
+}
+
+/* For screens smaller than 75em (1200px) */
+@media (max-width: 75em) {
+  .header {
+    padding: 2.4rem;
+  }
+}
+
+/* For screens smaller than 59em (944px) */
+@media (max-width: 59em) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+/* For screens smaller than 44em (704px) */
+@media (max-width: 44em) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+/* For screens smaller than 34em (544px) */
+@media (max-width: 34em) {
+  .header {
+    padding: 2rem;
+  }
+}
